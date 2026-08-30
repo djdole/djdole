@@ -27,7 +27,7 @@ Soft Skills: listening, empathy, communication, understanding, delegation, colla
 
 WORK EXPERIENCE
 Software Developer 2024-03 to 2025-07
-Docusign, Inc. · Docusign Connect, Connect Test Listener (webhook) · Ruby Webhook Test Interface · x509 Certificate Management
+Docusign, Inc. · Docusign Connect · Connect Test Listener (webhook) · Ruby Webhook Test Interface · x509 Certificate Management
 ● Designed, implemented, and maintained the Connect Team APIListener webhook tool, a production service used for automated end-to-end validation of webhook delivery.
 ● Built and maintained a Ruby-based webhook testing application enabling fast, safe switching of targeted webhook endpoints, while preserving operational functionality across internal Docusign systems.
 ● Led a migration to a new internal x509 certificate for Docusign Connect webhook connections, coordinating certificate rotation and deployment validation with 5+ internal engineering teams.

@@ -1,9 +1,3 @@
-[![Tests](https://github.com/djdole/resume-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/djdole/djdole/actions/workflows/tests.yml)
-[![Coverage](https://raw.githubusercontent.com/djdole/resume-generator/main/badges/coverage-badge.svg)](https://github.com/djdole/djdole/actions/workflows/tests.yml)
-[![Tests Passing](https://raw.githubusercontent.com/djdole/resume-generator/main/badges/tests-badge.svg)](https://github.com/djdole/djdole/actions/workflows/tests.yml)
-
----
-
 # Hi, I'm Dennis Jay Dole 👋
 
 Software Developer with years of valuable experience at Docusign, Microsoft, and Amazon building automated test frameworks, internal developer tooling, and webhook integration systems for distributed, production-scale software. Proficient across C#, Ruby, Python, Java, PHP, and Node.js, with a track record of designing APIs, debugging complex production issues, and leading technical migrations. Skilled at partnering with developers and product managers throughout the SDLC, and at mentoring engineers on new teams.
@@ -44,7 +38,7 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 ## 💼 Experience
 
 ### Software Developer
-#### Docusign, Inc.  -  **Mar 2024 to Jul 2025**
+#### Docusign, Inc.  -  **2024-03 to 2025-07**
 * Docusign Connect, Connect Test Listener (webhook), Ruby Webhook Test Interface, x509 Certificate Management *
 
 - Designed, implemented, and maintained the Connect Team APIListener webhook tool, a production service used for automated end-to-end validation of webhook delivery.
@@ -54,7 +48,7 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Partnered with Product Management to reproduce, triage, and resolve customer upgrade and configuration issues.
 
 ### Software Design Engineer in Test (SDET)
-#### Docusign, Inc.  -  **Nov 2013 to Mar 2024**
+#### Docusign, Inc.  -  **2013-11 to 2024-03**
 * Docusign Connect, Product Incubation Team, Docusign Print Tool (deprecated) *
 
 - Designed and built automated test frameworks and a custom API request communication layer using NUnit and Selenium.
@@ -71,20 +65,20 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Conducted manual mobile application testing for approximately six months, verifying functionality and user experience across mobile platforms.
 
 ### SDET2
-#### Microsoft Engineering Excellence  -  **Jan 2012 to Jun 2013**
+#### Microsoft Engineering Excellence  -  **2012-01 to 2013-06**
 * Team Foundation Server, Microsoft Test Manager, C# *
 
 - Designed and implemented automated tests for Quality Essentials v3 Client and Server.
 - Collaborated with developers, PMs, and leads to ensure quality testing of existing and new features.
 
 ### SDET2
-#### Amazon  -  **Nov 2011 to Jan 2012**
+#### Amazon  -  **2011-11 to 2012-01**
 * Linux, Eclipse, Hudson, Ant, TestNG, Java, Selenium *
 
 - Automated manual test cases to improve execution efficiency and coverage.
 
 ### SDET
-#### Microsoft Live  -  **Apr 2011 to Oct 2011**
+#### Microsoft Live  -  **2011-04 to 2011-10**
 * C#, SQL, WTT, Kahuna Automation Framework (KAF), NUnit, Source Depot, HyperV, Octopus *
 
 - Designed and implemented a KAF-based test automation framework to execute Build Verification Tests (BVTs) for the BaR team.
@@ -92,7 +86,7 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Tested and documented issues across current and related product features.
 
 ### SDET
-#### Microsoft Health Solutions Group  -  **Feb 2008 to Nov 2010**
+#### Microsoft Health Solutions Group  -  **2008-02 to 2010-11**
 * C#, SQL, WTT, Echo, KAF, NUnit, iMacros, REST, XML, HyperV *
 
 - Designed, updated, and maintained test plans for owned and shared product features.
@@ -102,14 +96,14 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Partnered with management, developers, UX, and operations to ensure product quality met release standards.
 
 ### Software Engineer
-#### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **Mar 2006 to Feb 2008**
+#### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **2006-03 to 2008-02**
 * Borland JBuilder, Java, Swing, Borland C++, Oracle SQL, PVCS/Serena *
 
 - Designed, developed, and debugged desktop applications using Borland C++ and Java, resolving defects tracked in Team Track.
 - Automated Excel-based reporting integrated with a SQL trouble-ticket tracking system for contract customers.
 
 ### Quality Assurance Engineer
-#### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **Mar 2005 to Aug 2006**
+#### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **2005-03 to 2006-08**
 * Excel, iMacros, Visual Basic, Team Track *
 
 - Developed and maintained system and regression test plans for existing and new software applications.

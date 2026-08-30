@@ -201,7 +201,7 @@
       "title": "Software Developer",
       "company": "Docusign, Inc.",
       "date_range": "2024-03 to 2025-07",
-      "team_context": "Docusign Connect, Connect Test Listener (webhook) \u00b7 Ruby Webhook Test Interface \u00b7 x509 Certificate Management",
+      "team_context": "Docusign Connect \u00b7 Connect Test Listener (webhook) \u00b7 Ruby Webhook Test Interface \u00b7 x509 Certificate Management",
       "bullets": [
         "Designed, implemented, and maintained the Connect Team APIListener webhook tool, a production service used for automated end-to-end validation of webhook delivery.",
         "Built and maintained a Ruby-based webhook testing application enabling fast, safe switching of targeted webhook endpoints, while preserving operational functionality across internal Docusign systems.",
