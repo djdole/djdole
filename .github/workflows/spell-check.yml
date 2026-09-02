@@ -1,0 +1,24 @@
+name: Manual Spell Check
+
+# This trigger enables the "Run workflow" button in the GitHub Actions tab
+on:
+  workflow_dispatch:
+
+jobs:
+  spell-check:
+    name: Check Repository Spelling
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Clone the repository files into the runner environment
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Run the spell checker against all files
+      - name: Run CSpell
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          # Forces the runner to scan all files instead of just recent git changes
+          incremental_files_only: false
+          # Optional: Fails the build if any spelling errors are caught
+          strict: true
