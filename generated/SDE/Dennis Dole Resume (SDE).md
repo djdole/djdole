@@ -96,3 +96,4 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 
 ## Education
 - Bachelor of Science in Computer Science, Michigan Technological University (2004)
+- JavaScript and Playwright Automation with AI Program (Certificate of Completion), CYDEO (Sep 2026)
