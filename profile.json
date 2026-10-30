@@ -5,7 +5,7 @@
       "Dennis_Dole_Resume__SDE_.pdf",
       "Dennis_Dole_Resume__SDET_.pdf"
     ],
-    "last_updated": "2026-10-29 (v9)",
+    "last_updated": "2026-10-29 (v10)",
     "output_rules": {
       "never_fabricate": "Do not invent skills, employers, dates, degrees, certifications, or quantified metrics that are not present in this knowledge base.",
       "never_use_em_dash": "NEVER use the em dash character (Unicode U+2014, the long dash) anywhere in generated output (resumes, cover letters, README, any format). Use a comma, period, colon, semicolon, or parentheses instead depending on context, or restructure the sentence. This applies to all generated formats (pdf, docx, txt, md, json) and to any newly authored summary/bullet/cover-letter text, not just content copied from this file.",
@@ -55,9 +55,20 @@
       "acronym_expansion": "Include both the spelled-out phrase and the acronym for key terms at least once (for example 'Continuous Integration/Continuous Delivery (CI/CD)', 'Kusto Query Language (KQL)').",
       "certifications_rendering": "Render certifications in a section headed 'Certifications' (or 'Certifications and Training'). Use each entry's 'type' wording exactly: a 'Certificate of Completion' must not be described as a vendor certification, license, or degree. Show name, issuer, month and year, and the credential URL or ID. Include the section when the JD mentions certifications, training, Playwright, JavaScript, test automation, BDD, or AI in testing; otherwise include it briefly if space allows.",
       "generic_variant_guidance": "The GENERIC variant is the default resume, not tailored to SDE, SDET, or any particular position. Use it when no job description is given or the JD does not clearly map to SDE or SDET. It uses summary_variants.GENERIC, each role's title_by_variant.GENERIC, and variant_settings.GENERIC. Its job_acronym is intentionally blank, so file naming templates drop their optional <{JobAcronym}> groups.",
-      "certifications_placement": "List certifications inside the EDUCATION section, after the degrees and newest first, one line per certification in the form '<name> (<type>), <issuer> (<Mon YYYY>)', instead of in a separate Certifications section. This supersedes the section-heading guidance in output_rules.certifications_rendering; its 'type' wording rule still applies (a certificate of completion is never presented as a vendor certification). Include every certification unless its include_in_resume_education is false."
+      "certifications_placement": "List certifications inside the EDUCATION section, after the degrees and newest first, one line per certification in the form '<name> (<type>), <issuer> (<Mon YYYY>)', instead of in a separate Certifications section. This supersedes the section-heading guidance in output_rules.certifications_rendering; its 'type' wording rule still applies (a certificate of completion is never presented as a vendor certification). Include every certification unless its include_in_resume_education is false.",
+      "certifications_readme_placement": "In the generated GitHub profile README, list certifications inside the Education section after the degrees, newest first, each as '**<name> (<type>)**', then the issuer, then 'Issued <Mon YYYY>' (no field of study, and 'Issued' instead of 'Graduated'). Include every certification unless its include_in_readme_education is false."
     },
     "change_log": [
+      {
+        "version": "v10",
+        "date": "2026-10-29",
+        "changes": [
+          "Certifications now also appear in the generated README's Education section ('Issued <date>'), in addition to the resume's.",
+          "Added include_in_readme_education (default true) to each certification, independent of include_in_resume_education.",
+          "Added output_rules.certifications_readme_placement and knowledge_base_update_rules.certification_readme_placement.",
+          "Purely additive; previous version stamp: 2026-10-29 (v9)."
+        ]
+      },
       {
         "version": "v9",
         "date": "2026-10-29",
@@ -123,7 +134,8 @@
       "output_alias_rendering": "When rendering a resume, spell out important acronyms once next to the abbreviation (for example 'Continuous Integration/Continuous Delivery (CI/CD)') so both forms match ATS keyword searches.",
       "certification_sync": "When a certification is added to the 'certifications' array, add every keyword in its 'skills_covered' list to the matching 'skills' category, using the same keyword-sync steps as for new experience. A skill backed only by a certification (no role used it) is allowed; set the entry's 'backed_by_certification' field so the skill's source is traceable, and do not claim it in a role's bullets or technologies unless it was actually applied in that role.",
       "variant_sync": "When adding a new variant (for example SRE): add summary_variants.<VARIANT>, add title_by_variant.<VARIANT> to EVERY work_experience entry (reuse the real title where the role is not variant-specific), and, only if it needs a non-default skills heading or a blank/custom file-name acronym, add variant_settings.<VARIANT> with 'skills_heading' and/or 'job_acronym'. A variant_settings entry with 'job_acronym' null or '' produces file names without the acronym; omitting the key keeps the variant name as the acronym. Never remove an existing variant.",
-      "certification_resume_placement": "A certification added to the 'certifications' array automatically appears in the resume's Education section; do NOT also copy it into the 'education' array (that would list it twice). Give each entry 'name', 'issuer', 'type', and 'issue_date' (YYYY-MM-DD) so it renders and sorts correctly, plus 'issue_date_display' (for example 'Sep 2026') if the formatted date should differ. Set 'include_in_resume_education' to false only to keep an entry in this file but off the resume."
+      "certification_resume_placement": "A certification added to the 'certifications' array automatically appears in the resume's Education section; do NOT also copy it into the 'education' array (that would list it twice). Give each entry 'name', 'issuer', 'type', and 'issue_date' (YYYY-MM-DD) so it renders and sorts correctly, plus 'issue_date_display' (for example 'Sep 2026') if the formatted date should differ. Set 'include_in_resume_education' to false only to keep an entry in this file but off the resume.",
+      "certification_readme_placement": "A certification added to the 'certifications' array automatically appears in the generated README's Education section as well as the resume's; do not copy it into the 'education' array. Use include_in_readme_education (default true) and include_in_resume_education (default true) independently to keep an entry off either one."
     }
   },
   "personal_info": {
@@ -1401,7 +1413,8 @@
         "continuing education"
       ],
       "suggested_resume_line": "JavaScript and Playwright Automation with AI Program (Certificate of Completion), CYDEO, Sep 2026, Credential ID HQ4M",
-      "include_in_resume_education": true
+      "include_in_resume_education": true,
+      "include_in_readme_education": true
     }
   ],
   "variant_settings": {
