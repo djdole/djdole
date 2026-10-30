@@ -18,7 +18,9 @@
         "C++",
         "Lisp",
         "Visual Basic",
-        "JavaScript"
+        "JavaScript",
+        "TypeScript",
+        "Shell scripting"
       ]
     },
     {
@@ -29,7 +31,13 @@
         "IIS",
         "nginx",
         "Node.js",
-        "MongoDB"
+        "MongoDB",
+        "SOAP",
+        "XML",
+        "JSON",
+        "webhooks",
+        "HMAC authentication",
+        "x509 certificates"
       ]
     },
     {
@@ -49,7 +57,11 @@
         "Echo",
         "Docusign's SAW Ruby framework",
         "KAF (Kahuna Automation Framework)",
-        "custom API test/automation harnesses"
+        "custom API test/automation harnesses",
+        "TestNG",
+        "iMacros",
+        "Cucumber (BDD)",
+        "Page Object Model"
       ]
     },
     {
@@ -57,7 +69,11 @@
       "items": [
         "Angular (manual + Selenium automated testing)",
         "React (manual + Selenium automated testing)",
-        "mobile application manual testing"
+        "mobile application manual testing",
+        "Playwright (JavaScript/TypeScript)",
+        "Java Swing (desktop UI)",
+        "Cross-browser testing",
+        "Parallel testing"
       ]
     },
     {
@@ -68,7 +84,8 @@
         "jUnit",
         "PHPUnit",
         "WTT (Microsoft internal)",
-        "SAW (Docusign internal)"
+        "SAW (Docusign internal)",
+        "TestNG"
       ]
     },
     {
@@ -78,7 +95,11 @@
         "TFS",
         "test plan design",
         "bug triage",
-        "exploratory testing (black/white box)"
+        "exploratory testing (black/white box)",
+        "Team Track (defect tracking)",
+        "Playwright reports",
+        "Cucumber reports",
+        "test reporting"
       ]
     },
     {
@@ -97,7 +118,13 @@
         "GitHub Actions / GitHub Workflows",
         "Docker",
         "Kubernetes",
-        "Ansible"
+        "Ansible",
+        "CI/CD",
+        "CI/CD pipelines",
+        "Continuous Integration/Continuous Delivery (CI/CD)",
+        "Terraform",
+        "Azure",
+        "Ant"
       ]
     },
     {
@@ -107,7 +134,8 @@
         "Kusto",
         "MongoDB",
         "Kusto Query Language",
-        "KQL"
+        "KQL",
+        "Oracle SQL"
       ]
     },
     {
@@ -117,7 +145,8 @@
         "Mercurial",
         "TFS",
         "Source Depot",
-        "PVCS"
+        "PVCS",
+        "GitHub"
       ]
     },
     {
@@ -138,13 +167,18 @@
         "HyperV",
         "VirtualBox",
         "Proxmox",
-        "WSL"
+        "WSL",
+        "Azure",
+        "Terraform"
       ]
     },
     {
       "category": "Developer Tools & IDEs",
       "items": [
-        "VS Code (Git/GitHub integration)"
+        "VS Code (Git/GitHub integration)",
+        "Eclipse",
+        "Borland JBuilder",
+        "Excel (reporting automation)"
       ]
     },
     {
@@ -153,7 +187,16 @@
         "LLM-assisted content/document generation (Claude)",
         "structured JSON knowledge-base design for LLM consumption",
         "prompt/instruction engineering for repeatable AI workflows",
-        "AI-assisted CI/CD pipeline design (GitHub Actions + LLM API)"
+        "AI-assisted CI/CD pipeline design (GitHub Actions + LLM API)",
+        "LLM",
+        "Ollama (local LLM hosting)",
+        "GitHub Copilot",
+        "Claude Code",
+        "Claude.ai",
+        "Perplexity",
+        "Antigravity",
+        "Tabnine",
+        "prompt engineering"
       ]
     },
     {
@@ -164,7 +207,9 @@
         "Kanban",
         "TDD",
         "Waterfall",
-        "DevOps"
+        "DevOps",
+        "Freelancing",
+        "BDD (Behavior-Driven Development)"
       ]
     },
     {
@@ -194,9 +239,50 @@
         "critical thinking",
         "adaptability"
       ]
+    },
+    {
+      "category": "Cloud And Infrastructure As Code",
+      "items": [
+        "Azure",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "Ansible"
+      ]
+    },
+    {
+      "category": "Scripting And Automation",
+      "items": [
+        "PowerShell",
+        "Bash",
+        "Shell scripting",
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "category": "Freelance And Independent Work",
+      "items": [
+        "Freelancing"
+      ]
     }
   ],
   "work_experience": [
+    {
+      "title": "Software Development Engineer",
+      "company": "Freelance (Self-Employed)",
+      "date_range": "Aug 2025 to Present",
+      "team_context": "Freelancing \u00b7 Playwright \u00b7 JavaScript \u00b7 TypeScript \u00b7 Python \u00b7 PowerShell \u00b7 Bash \u00b7 Shell scripting \u00b7 CI/CD \u00b7 GitHub Actions \u00b7 LLM \u00b7 Ollama \u00b7 GitHub Copilot \u00b7 Claude Code \u00b7 Claude.ai \u00b7 Perplexity",
+      "bullets": [
+        "Delivered freelance software engineering and automation work using Python, JavaScript, TypeScript, PowerShell, Bash, and shell scripting.",
+        "Built automated browser and end-to-end tests with Playwright in JavaScript and TypeScript.",
+        "Designed CI/CD pipelines using GitHub Actions to automate build, test, and release workflows, including AI-assisted pipelines that call an LLM API.",
+        "Designed a structured JSON knowledge base and repeatable prompt instructions that let a local LLM running on Ollama generate tailored resumes and cover letters.",
+        "Applied AI-assisted development tools, including GitHub Copilot, Claude Code, Claude.ai, and Perplexity, to accelerate coding, debugging, research, and documentation.",
+        "Wrote PowerShell, Bash, and shell scripts to automate repetitive setup, testing, and deployment tasks across Windows and Linux environments."
+      ]
+    },
     {
       "title": "Software Developer",
       "company": "Docusign, Inc.",
