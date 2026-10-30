@@ -5,7 +5,7 @@
       "Dennis_Dole_Resume__SDE_.pdf",
       "Dennis_Dole_Resume__SDET_.pdf"
     ],
-    "last_updated": "2026-10-29 (v7)",
+    "last_updated": "2026-10-29 (v8)",
     "output_rules": {
       "never_fabricate": "Do not invent skills, employers, dates, degrees, certifications, or quantified metrics that are not present in this knowledge base.",
       "never_use_em_dash": "NEVER use the em dash character (Unicode U+2014, the long dash) anywhere in generated output (resumes, cover letters, README, any format). Use a comma, period, colon, semicolon, or parentheses instead depending on context, or restructure the sentence. This applies to all generated formats (pdf, docx, txt, md, json) and to any newly authored summary/bullet/cover-letter text, not just content copied from this file.",
@@ -41,6 +41,11 @@
           "test infrastructure",
           "release engineering",
           "DevOps"
+        ],
+        "GENERIC_use_when": [
+          "no job description provided",
+          "job description does not clearly map to an existing varient (e.g. SDET or SDE)",
+          "a default resume to keep on file or share broadly"
         ]
       },
       "company_name_canonical": "Always render the company as 'DocuSign' (capital S) in generated output, even though some fields in this file use 'Docusign'. Use one consistent spelling throughout.",
@@ -48,9 +53,20 @@
       "title_ats_guidance": "Where a work_experience entry has 'title_ats_alternate', use it in addition to or instead of the internal title when the JD uses that wording, so ATS title matching succeeds. Many JDs say 'Software Development Engineer in Test' while the Docusign title is 'Software Design Engineer in Test'; keep the real title and mirror the JD wording in the summary.",
       "years_of_experience_guidance": "Use summary_building_blocks.years_experience for any 'years of experience' claim. Prefer a concrete number over the vague phrase 'years of valuable experience'.",
       "acronym_expansion": "Include both the spelled-out phrase and the acronym for key terms at least once (for example 'Continuous Integration/Continuous Delivery (CI/CD)', 'Kusto Query Language (KQL)').",
-      "certifications_rendering": "Render certifications in a section headed 'Certifications' (or 'Certifications and Training'). Use each entry's 'type' wording exactly: a 'Certificate of Completion' must not be described as a vendor certification, license, or degree. Show name, issuer, month and year, and the credential URL or ID. Include the section when the JD mentions certifications, training, Playwright, JavaScript, test automation, BDD, or AI in testing; otherwise include it briefly if space allows."
+      "certifications_rendering": "Render certifications in a section headed 'Certifications' (or 'Certifications and Training'). Use each entry's 'type' wording exactly: a 'Certificate of Completion' must not be described as a vendor certification, license, or degree. Show name, issuer, month and year, and the credential URL or ID. Include the section when the JD mentions certifications, training, Playwright, JavaScript, test automation, BDD, or AI in testing; otherwise include it briefly if space allows.",
+      "generic_variant_guidance": "The GENERIC variant is the default resume, not tailored to SDE, SDET, or any particular position. Use it when no job description is given or the JD does not clearly map to SDE or SDET. It uses summary_variants.GENERIC, each role's title_by_variant.GENERIC, and variant_settings.GENERIC. Its job_acronym is intentionally blank, so file naming templates drop their optional <{JobAcronym}> groups."
     },
     "change_log": [
+      {
+        "version": "v8",
+        "date": "2026-10-29",
+        "changes": [
+          "Added the GENERIC variant: summary_variants.GENERIC and title_by_variant.GENERIC on every work_experience entry.",
+          "Added top-level variant_settings (GENERIC has a blank job_acronym so generated files carry no '(JobAcronym)' suffix or per-variant subfolder).",
+          "Added generation_workflow_for_llm step 13, output_rules.generic_variant_guidance, and knowledge_base_update_rules.variant_sync.",
+          "Purely additive; previous version stamp: 2026-10-29 (v7). Freelance title edits made after v7 were preserved."
+        ]
+      },
       {
         "version": "v7",
         "date": "2026-10-29",
@@ -95,7 +111,8 @@
       "truthfulness": "Only add skills that are supported by the new experience actually being added. Do not invent employers, dates, titles, tools, or metrics. If a skill is requested without any supporting experience, ask the user which role or project it was applied in, then add it to that role's 'technologies' and to 'skills'.",
       "reverse_sync": "If a skill is added directly to the 'skills' object, make sure it also appears in at least one work_experience entry (technologies, methodologies, or a bullet's skills) so it is shown in context.",
       "output_alias_rendering": "When rendering a resume, spell out important acronyms once next to the abbreviation (for example 'Continuous Integration/Continuous Delivery (CI/CD)') so both forms match ATS keyword searches.",
-      "certification_sync": "When a certification is added to the 'certifications' array, add every keyword in its 'skills_covered' list to the matching 'skills' category, using the same keyword-sync steps as for new experience. A skill backed only by a certification (no role used it) is allowed; set the entry's 'backed_by_certification' field so the skill's source is traceable, and do not claim it in a role's bullets or technologies unless it was actually applied in that role."
+      "certification_sync": "When a certification is added to the 'certifications' array, add every keyword in its 'skills_covered' list to the matching 'skills' category, using the same keyword-sync steps as for new experience. A skill backed only by a certification (no role used it) is allowed; set the entry's 'backed_by_certification' field so the skill's source is traceable, and do not claim it in a role's bullets or technologies unless it was actually applied in that role.",
+      "variant_sync": "When adding a new variant (for example SRE): add summary_variants.<VARIANT>, add title_by_variant.<VARIANT> to EVERY work_experience entry (reuse the real title where the role is not variant-specific), and, only if it needs a non-default skills heading or a blank/custom file-name acronym, add variant_settings.<VARIANT> with 'skills_heading' and/or 'job_acronym'. A variant_settings entry with 'job_acronym' null or '' produces file names without the acronym; omitting the key keeps the variant name as the acronym. Never remove an existing variant."
     }
   },
   "personal_info": {
@@ -120,7 +137,8 @@
   "summary_variants": {
     "SDE": "Software Developer with years of valuable experience at Docusign, Microsoft, and Amazon building automated test frameworks, internal developer tooling, and webhook integration systems for distributed, production-scale software. Proficient across C#, Ruby, Python, Java, PHP, and Node.js, with a track record of designing APIs, debugging complex production issues, and leading technical migrations. Skilled at partnering with developers and product managers throughout the SDLC, and at mentoring engineers on new teams.",
     "SDET": "Software Development Engineer in Test with years of valuable experience at Docusign, Microsoft, and Amazon, specializing in designing automated test frameworks, building internal test tooling, and debugging complex product issues across distributed systems and webhook integrations. Skilled at driving test coverage, root-causing defects, and partnering with developers and product managers throughout the SDLC. Proven track record mentoring new engineers and leading testing initiatives from planning through release.",
-    "SDET2": "Software Design Engineer in Test with years of valuable experience at Docusign, Microsoft, and Amazon, specializing in designing automated test frameworks, building internal test tooling, and debugging complex product issues across distributed systems and webhook integrations. Skilled at driving test coverage, root-causing defects, and partnering with developers and product managers throughout the SDLC. Proven track record mentoring new engineers and leading testing initiatives from planning through release."
+    "SDET2": "Software Design Engineer in Test with years of valuable experience at Docusign, Microsoft, and Amazon, specializing in designing automated test frameworks, building internal test tooling, and debugging complex product issues across distributed systems and webhook integrations. Skilled at driving test coverage, root-causing defects, and partnering with developers and product managers throughout the SDLC. Proven track record mentoring new engineers and leading testing initiatives from planning through release.",
+    "GENERIC": "Experienced Software Developer and SDET with 15+ years at Docusign, Microsoft, and Amazon, and a strong background in tool creation, automated testing, debugging, and cross-team collaboration. Skilled in designing automated test frameworks and internal tooling, mentoring engineers, and supporting successful product releases. Proficient across C#, Ruby, Python, Java, PHP, and JavaScript."
   },
   "summary_building_blocks": {
     "companies": [
@@ -378,7 +396,8 @@
     {
       "title_by_variant": {
         "SDE": "Software Development Engineer",
-        "SDET": "Software Development Engineer in Test"
+        "SDET": "Software Development Engineer in Test",
+        "GENERIC": "Developer"
       },
       "company": "Freelance (Self-Employed)",
       "team_context": "Freelancing, Playwright, JavaScript, TypeScript, Python, PowerShell, Bash, Shell scripting, CI/CD, GitHub Actions, LLM, Ollama, GitHub Copilot, Claude Code, Claude.ai, Perplexity",
@@ -520,7 +539,8 @@
     },
     {
       "title_by_variant": {
-        "SDE": "Software Developer"
+        "SDE": "Software Developer",
+        "GENERIC": "Software Developer"
       },
       "company": "Docusign, Inc.",
       "team_context": "Docusign Connect, Connect Test Listener (webhook), Ruby Webhook Test Interface, x509 Certificate Management",
@@ -647,7 +667,8 @@
     {
       "title_by_variant": {
         "SDE": "Software Design Engineer in Test (SDET)",
-        "SDET": "Software Design Engineer in Test (SDET)"
+        "SDET": "Software Design Engineer in Test (SDET)",
+        "GENERIC": "Software Design Engineer in Test (SDET)"
       },
       "company": "Docusign, Inc.",
       "team_context": "Docusign Connect, Product Incubation Team, Docusign Print Tool (deprecated)",
@@ -889,7 +910,8 @@
     {
       "title_by_variant": {
         "SDE": "SDET2",
-        "SDET": "SDET2"
+        "SDET": "SDET2",
+        "GENERIC": "SDET2"
       },
       "company": "Microsoft Engineering Excellence",
       "team_context": "Team Foundation Server, Microsoft Test Manager, C#",
@@ -933,7 +955,8 @@
     {
       "title_by_variant": {
         "SDE": "SDET2",
-        "SDET": "SDET2"
+        "SDET": "SDET2",
+        "GENERIC": "SDET2"
       },
       "company": "Amazon",
       "team_context": "Linux, Eclipse, Hudson, Ant, TestNG, Java, Selenium",
@@ -994,7 +1017,8 @@
     {
       "title_by_variant": {
         "SDE": "SDET",
-        "SDET": "SDET"
+        "SDET": "SDET",
+        "GENERIC": "SDET"
       },
       "company": "Microsoft Live",
       "team_context": "C#, SQL, WTT, Kahuna Automation Framework (KAF), NUnit, Source Depot, HyperV, Octopus",
@@ -1052,7 +1076,8 @@
     {
       "title_by_variant": {
         "SDE": "SDET",
-        "SDET": "SDET"
+        "SDET": "SDET",
+        "GENERIC": "SDET"
       },
       "company": "Microsoft Health Solutions Group",
       "team_context": "C#, SQL, WTT, Echo, KAF, NUnit, iMacros, REST, XML, HyperV",
@@ -1131,7 +1156,8 @@
     {
       "title_by_variant": {
         "SDE": "Software Engineer",
-        "SDET": "Software Engineer"
+        "SDET": "Software Engineer",
+        "GENERIC": "Software Engineer"
       },
       "company": "Cosworth Tech Inc. / MAHLE Powertrain LLC",
       "team_context": "Borland JBuilder, Java, Swing, Borland C++, Oracle SQL, PVCS/Serena",
@@ -1183,7 +1209,8 @@
     {
       "title_by_variant": {
         "SDE": "Quality Assurance Engineer",
-        "SDET": "Quality Assurance Engineer"
+        "SDET": "Quality Assurance Engineer",
+        "GENERIC": "Quality Assurance Engineer"
       },
       "company": "Cosworth Tech Inc. / MAHLE Powertrain LLC",
       "team_context": "Excel, iMacros, Visual Basic, Team Track",
@@ -1286,7 +1313,8 @@
     "9. Output should clearly separate RESUME and COVER LETTER content unless the user asks for only one.",
     "10. If the JD was fetched from a URL, briefly note at the top of the output which company/role was detected from the posting, so the user can quickly confirm the right JD was used before reading the full output.",
     "11. Determine requested output format(s) per output_format_instructions: default to pdf + docx if the user doesn't specify; honor explicit format requests (docx, json, md, pdf, txt, or any combination). Make the content decisions (summary, skills order, bullets, cover letter text) exactly once, then render that identical content into each requested format per output_format_instructions.consistency_rule.",
-    "12. Certifications: if the JD mentions certifications or training, or its keywords overlap with a certification's 'skills_covered' or 'themes', include a 'Certifications' section built from the 'certifications' array, following meta.output_rules.certifications_rendering. Describe each item exactly per its 'type' and never present a certificate of completion as a vendor certification. Apply the same content to every requested output format."
+    "12. Certifications: if the JD mentions certifications or training, or its keywords overlap with a certification's 'skills_covered' or 'themes', include a 'Certifications' section built from the 'certifications' array, following meta.output_rules.certifications_rendering. Describe each item exactly per its 'type' and never present a certificate of completion as a vendor certification. Apply the same content to every requested output format.",
+    "13. Generic/default resume: when no JD is given, or the JD does not clearly map to SDE or SDET, use the GENERIC variant: summary_variants.GENERIC, title_by_variant.GENERIC on each work_experience entry, and variant_settings.GENERIC (heading 'CORE TECHNICAL SKILLS'). Do not tailor it to a specific position, and keep the same bullet selection and ordering rules as every other variant."
   ],
   "certifications": [
     {
@@ -1362,5 +1390,13 @@
       ],
       "suggested_resume_line": "JavaScript and Playwright Automation with AI Program (Certificate of Completion), CYDEO, Sep 2026, Credential ID HQ4M"
     }
-  ]
+  ],
+  "variant_settings": {
+    "_note": "Optional per-variant presentation settings read by LLM-Career-Coach. 'job_acronym': what {JobAcronym} renders as in file naming templates (omit the key to use the variant name; null or '' makes it blank, which drops optional <...> groups in the template). 'skills_heading': overrides the skills section heading.",
+    "GENERIC": {
+      "description": "Generic/default resume, not tailored to any particular position.",
+      "job_acronym": "",
+      "skills_heading": "CORE TECHNICAL SKILLS"
+    }
+  }
 }
