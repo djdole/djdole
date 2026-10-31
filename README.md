@@ -51,8 +51,6 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Applied AI-assisted development tools, including GitHub Copilot, Claude Code, Claude.ai, and Perplexity, to accelerate coding, debugging, research, and documentation.
 - Wrote PowerShell, Bash, and shell scripts to automate repetitive setup, testing, and deployment tasks across Windows and Linux environments.
 
----
-
 ### Software Developer
 #### Docusign, Inc.  -  **2024-03 to 2025-07**
 * Docusign Connect * Connect Test Listener (webhook) * Ruby Webhook Test Interface * x509 Certificate Management *
@@ -62,8 +60,6 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Led a migration to a new internal x509 certificate for Docusign Connect webhook connections, coordinating certificate rotation and deployment validation with 5+ internal engineering teams.
 - Improved the stability and reliability of internal webhook tooling relied on by automation and developer initiatives.
 - Partnered with Product Management to reproduce, triage, and resolve customer upgrade and configuration issues.
-
----
 
 ### Software Design Engineer in Test (SDET)
 #### Docusign, Inc.  -  **2013-11 to 2024-03**
@@ -82,8 +78,6 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Performed manual and Selenium-based automated testing of Angular and React front-end applications, verifying UI functionality and catching regressions ahead of release.
 - Conducted manual mobile application testing for approximately six months, verifying functionality and user experience across mobile platforms.
 
----
-
 ### SDET2
 #### Microsoft Engineering Excellence  -  **2012-01 to 2013-06**
 * Team Foundation Server * Microsoft Test Manager * C# *
@@ -91,15 +85,11 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Designed and implemented automated tests for Quality Essentials v3 Client and Server.
 - Collaborated with developers, PMs, and leads to ensure quality testing of existing and new features.
 
----
-
 ### SDET2
 #### Amazon  -  **2011-11 to 2012-01**
 * Linux * Eclipse * Hudson * Ant * TestNG * Java * Selenium *
 
 - Automated manual test cases to improve execution efficiency and coverage.
-
----
 
 ### SDET
 #### Microsoft Live  -  **2011-04 to 2011-10**
@@ -108,8 +98,6 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Designed and implemented a KAF-based test automation framework to execute Build Verification Tests (BVTs) for the BaR team.
 - Owned test features end-to-end, collaborating with developers and product managers to plan and execute strategy.
 - Tested and documented issues across current and related product features.
-
----
 
 ### SDET
 #### Microsoft Health Solutions Group  -  **2008-02 to 2010-11**
@@ -121,16 +109,12 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 - Participated in bug triage to review, prioritize, and delegate issue resolution.
 - Partnered with management, developers, UX, and operations to ensure product quality met release standards.
 
----
-
 ### Software Engineer
 #### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **2006-03 to 2008-02**
 * Borland JBuilder * Java * Swing * Borland C++ * Oracle SQL * PVCS/Serena *
 
 - Designed, developed, and debugged desktop applications using Borland C++ and Java, resolving defects tracked in Team Track.
 - Automated Excel-based reporting integrated with a SQL trouble-ticket tracking system for contract customers.
-
----
 
 ### Quality Assurance Engineer
 #### Cosworth Tech Inc. / MAHLE Powertrain LLC  -  **2005-03 to 2006-08**
@@ -146,6 +130,10 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 **Bachelor of Science in Computer Science**<br>
 Michigan Technological University - Computer Science<br>
 Graduated 2004
+
+**JavaScript and Playwright Automation with AI Program (Certificate of Completion)**<br>
+CYDEO<br>
+Issued Sep 2026
 
 ---
 
