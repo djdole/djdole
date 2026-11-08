@@ -5,7 +5,7 @@
       "Dennis_Dole_Resume__SDE_.pdf",
       "Dennis_Dole_Resume__SDET_.pdf"
     ],
-    "last_updated": "2026-10-29 (v10)",
+    "last_updated": "2026-11-08 (v11)",
     "output_rules": {
       "never_fabricate": "Do not invent skills, employers, dates, degrees, certifications, or quantified metrics that are not present in this knowledge base.",
       "never_use_em_dash": "NEVER use the em dash character (Unicode U+2014, the long dash) anywhere in generated output (resumes, cover letters, README, any format). Use a comma, period, colon, semicolon, or parentheses instead depending on context, or restructure the sentence. This applies to all generated formats (pdf, docx, txt, md, json) and to any newly authored summary/bullet/cover-letter text, not just content copied from this file.",
@@ -59,6 +59,17 @@
       "certifications_readme_placement": "In the generated GitHub profile README, list certifications inside the Education section after the degrees, newest first, each as '**<name> (<type>)**', then the issuer, then 'Issued <Mon YYYY>' (no field of study, and 'Issued' instead of 'Graduated'). Include every certification unless its include_in_readme_education is false."
     },
     "change_log": [
+      {
+        "version": "v11",
+        "date": "2026-11-08",
+        "changes": [
+          "Added the LinkedIn Learning 'Practical GitHub Actions' Certificate of Completion (completed 2026-11-08, credential ID 52cd38dc...27d5e) to the 'certifications' array.",
+          "Certificate details enriched from the LinkedIn Learning page: instructor (Ray Villalobos), 12 videos, certifying organization (LinkedIn), course last updated Oct 2025. The skills list is unchanged (GitHub is the only skill covered).",
+          "Keyword sync: 'GitHub' (the certificate's listed top skill) added to skills.ci_cd_and_devops; 'GitHub' already existed in version_control and 'GitHub Actions / GitHub Workflows' already existed in ci_cd_and_devops (both already backed by the Freelance role), so no duplicates were added and no backed_by_certification change was needed.",
+          "Added a strongest_differentiators line and a skill_selection_guidance_addendum note for the new certificate.",
+          "Purely additive; previous version stamp: 2026-10-29 (v10)."
+        ]
+      },
       {
         "version": "v10",
         "date": "2026-10-29",
@@ -294,7 +305,8 @@
       "Continuous Integration/Continuous Delivery (CI/CD)",
       "Terraform",
       "Azure",
-      "Ant"
+      "Ant",
+      "GitHub"
     ],
     "databases_and_query_languages": [
       "SQL",
@@ -398,7 +410,7 @@
     "freelance_and_independent_work": [
       "Freelancing"
     ],
-    "skill_selection_guidance_addendum": "When rendering skills on a resume: (1) deduplicate across categories (case-insensitive) so a keyword such as Docker, Kubernetes, Node.js, MongoDB, or TFS appears only once; (2) show 'Kusto Query Language (KQL)' as one entry instead of three; (3) omit the placeholder OS value 'custom'; (4) for CI/CD-oriented JDs lead with ci_cd_and_devops, cloud_and_infrastructure_as_code, and scripting_and_automation; (5) for AI-adjacent or developer-productivity JDs also lead with ai_and_automation_tooling and the current Freelance role; (6) keep the exact JD phrasing for any keyword the knowledge base truthfully supports. New categories added in v6: cloud_and_infrastructure_as_code, scripting_and_automation, freelance_and_independent_work. v7: for test-automation, Playwright, JavaScript, BDD, or AI-in-testing JDs, surface test_automation_frameworks, frontend_and_mobile_testing, ai_and_automation_tooling, and the 'certifications' entry cydeo_js_playwright_ai_2026.",
+    "skill_selection_guidance_addendum": "When rendering skills on a resume: (1) deduplicate across categories (case-insensitive) so a keyword such as Docker, Kubernetes, Node.js, MongoDB, or TFS appears only once; (2) show 'Kusto Query Language (KQL)' as one entry instead of three; (3) omit the placeholder OS value 'custom'; (4) for CI/CD-oriented JDs lead with ci_cd_and_devops, cloud_and_infrastructure_as_code, and scripting_and_automation; (5) for AI-adjacent or developer-productivity JDs also lead with ai_and_automation_tooling and the current Freelance role; (6) keep the exact JD phrasing for any keyword the knowledge base truthfully supports. New categories added in v6: cloud_and_infrastructure_as_code, scripting_and_automation, freelance_and_independent_work. v7: for test-automation, Playwright, JavaScript, BDD, or AI-in-testing JDs, surface test_automation_frameworks, frontend_and_mobile_testing, ai_and_automation_tooling, and the 'certifications' entry cydeo_js_playwright_ai_2026. v11: for GitHub Actions, CI/CD, DevOps, or workflow-automation JDs, also surface the 'certifications' entry linkedin_practical_github_actions_2026.",
     "backed_by_certification": {
       "note": "These skills are supported by the CYDEO certificate (see certifications[].id) and, unless also listed in a role, were not applied in an employment role.",
       "certification_id": "cydeo_js_playwright_ai_2026",
@@ -1285,7 +1297,8 @@
       "Fluent in many languages (C#, Ruby, Python, Java, PHP, Node.js) which is valuable for polyglot/integration-heavy roles.",
       "Hands-on manual and Selenium-automated testing experience with Angular and React front-end applications, plus manual mobile testing experience.",
       "Current applied AI and automation work: local LLM workflows with Ollama, AI-assisted development with GitHub Copilot, Claude Code, and Claude.ai, and CI/CD design with GitHub Actions.",
-      "Recent formal training: CYDEO JavaScript and Playwright Automation with AI Program (Sep 2026), covering Playwright, Cucumber BDD, Page Object Model, parallel and cross-browser testing, Jenkins CI, and AI-assisted testing tools."
+      "Recent formal training: CYDEO JavaScript and Playwright Automation with AI Program (Sep 2026), covering Playwright, Cucumber BDD, Page Object Model, parallel and cross-browser testing, Jenkins CI, and AI-assisted testing tools.",
+      "Recent formal training: LinkedIn Learning 'Practical GitHub Actions' (Nov 2026), reinforcing hands-on GitHub Actions CI/CD pipeline design."
     ],
     "potential_gaps_to_be_mindful_of": [],
     "current_phase_note": "From 2025-08 to present: Freelance Software Engineer focused on test and workflow automation (Playwright, JavaScript, TypeScript, Python), scripting (PowerShell, Bash, shell scripting), CI/CD with GitHub Actions, and applied LLM/AI tooling (Ollama, GitHub Copilot, Claude Code, Claude.ai, Perplexity)."
@@ -1341,6 +1354,45 @@
     "14. Certifications go in the EDUCATION section: after the degrees, newest first, one line each as '<name> (<type>), <issuer> (<Mon YYYY>)'. Include every certification where include_in_resume_education is not false, in every variant, and apply the same content to every requested output format."
   ],
   "certifications": [
+    {
+      "id": "linkedin_practical_github_actions_2026",
+      "name": "Practical GitHub Actions",
+      "issuer": "LinkedIn Learning",
+      "certifying_organization": "LinkedIn",
+      "type": "Certificate of Completion",
+      "type_note": "Issued as a course certificate of completion by LinkedIn Learning. It is not a vendor certification, an academic degree, or a license.",
+      "issue_date": "2026-11-08",
+      "issue_date_display": "Nov 2026",
+      "credential_id": "52cd38dca4fd2c3d83d02c7fc45245160b0972cca3d80a05f840f73566027d5e",
+      "credential_url": "https://www.linkedin.com/learning/certificates/52cd38dca4fd2c3d83d02c7fc45245160b0972cca3d80a05f840f73566027d5e",
+      "course_duration": "1 hour 20 minutes",
+      "video_count": 12,
+      "instructor": "Ray Villalobos",
+      "instructor_url": "https://www.linkedin.com/learning/instructors/ray-villalobos",
+      "course_last_updated": "Oct 2025",
+      "signed_by": "Shea Hanson, Head of Learning Content Strategy",
+      "topics_covered": {
+        "continuous_integration": [
+          "GitHub Actions"
+        ],
+        "version_control": [
+          "GitHub"
+        ]
+      },
+      "skills_covered": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "themes": [
+        "CI/CD",
+        "DevOps",
+        "automation",
+        "continuing education"
+      ],
+      "suggested_resume_line": "Practical GitHub Actions (Certificate of Completion), LinkedIn Learning, Nov 2026",
+      "include_in_resume_education": true,
+      "include_in_readme_education": true
+    },
     {
       "id": "cydeo_js_playwright_ai_2026",
       "name": "JavaScript and Playwright Automation with AI Program",
