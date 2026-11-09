@@ -7,7 +7,7 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 📱 734-218-2358<br>
 🔗 [ORCID](https://orcid.org/0000-0002-4442-0336)<br>
 🔗 [LinkedIn](https://www.linkedin.com/in/djdole/)<br>
-🔗 [Portfolio](https://github.com/djdole)
+🔗 [Portfolio](https://github.com/BitwiseThought-net)
 
 ---
 
@@ -21,7 +21,7 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 **Unit & Integration Testing:** nUnit, xUnit, jUnit, PHPUnit, WTT (Microsoft internal), SAW (Docusign internal), TestNG<br>
 **Test Management & Planning:** MTM, TFS, test plan design, bug triage, exploratory testing (black/white box), Team Track (defect tracking), Playwright reports, Cucumber reports, test reporting<br>
 **Performance Testing:** JMeter<br>
-**CI/CD & DevOps:** Jenkins, Hudson, Octopus, Azure Pipelines, GitHub Actions / GitHub Workflows, Docker, Kubernetes, Ansible, CI/CD, CI/CD pipelines, Continuous Integration/Continuous Delivery (CI/CD), Terraform, Azure, Ant<br>
+**CI/CD & DevOps:** Jenkins, Hudson, Octopus, Azure Pipelines, GitHub Actions / GitHub Workflows, Docker, Kubernetes, Ansible, CI/CD, CI/CD pipelines, Continuous Integration/Continuous Delivery (CI/CD), Terraform, Azure, Ant, GitHub<br>
 **Databases & Query Languages:** SQL, Kusto, MongoDB, Kusto Query Language, KQL, Oracle SQL<br>
 **Version Control:** Git, Mercurial, TFS, Source Depot, PVCS, GitHub<br>
 **Debugging & Diagnostics:** Fiddler, Postman, Resharper, xDebug, rDebug<br>
@@ -131,6 +131,10 @@ Software Developer with years of valuable experience at Docusign, Microsoft, and
 Michigan Technological University - Computer Science<br>
 Graduated 2004
 
+**Practical GitHub Actions (Certificate of Completion)**<br>
+LinkedIn Learning<br>
+Issued Nov 2026
+
 **JavaScript and Playwright Automation with AI Program (Certificate of Completion)**<br>
 CYDEO<br>
 Issued Sep 2026
@@ -149,6 +153,7 @@ Issued Sep 2026
 - Hands-on manual and Selenium-automated testing experience with Angular and React front-end applications, plus manual mobile testing experience.
 - Current applied AI and automation work: local LLM workflows with Ollama, AI-assisted development with GitHub Copilot, Claude Code, and Claude.ai, and CI/CD design with GitHub Actions.
 - Recent formal training: CYDEO JavaScript and Playwright Automation with AI Program (Sep 2026), covering Playwright, Cucumber BDD, Page Object Model, parallel and cross-browser testing, Jenkins CI, and AI-assisted testing tools.
+- Recent formal training: LinkedIn Learning 'Practical GitHub Actions' (Nov 2026), reinforcing hands-on GitHub Actions CI/CD pipeline design.
 
 ---
 
